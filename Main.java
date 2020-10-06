@@ -1,6 +1,8 @@
+import java.util.Scanner;
+
 /**
- *
- * @author 
+ * Creates multiplication table for a number
+ * @author Rose
  */
 public class Main {
 
@@ -9,7 +11,19 @@ public class Main {
    * @param args the command line arguments
    */
   public static void main(String[] args) {
-    // TODO code application logic here
+    // create new scanner for user input
+    Scanner input = new Scanner(System.in);
+
+    // ask user for an integer
+    System.out.println("Please enter an integer to create a multiplication table for");
+
+    // declare a variable to store the users number
+    int userNum = input.nextInt();
+
+    for(int multiply = 1; multiply <= 12; multiply++){
+      int product = multiply*userNum;
+      System.out.println(multiply + " x " + userNum + " = " + product);
+    }
     
   }
 }
