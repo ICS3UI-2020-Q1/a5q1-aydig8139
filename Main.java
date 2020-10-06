@@ -20,8 +20,13 @@ public class Main {
     // declare a variable to store the users number
     int userNum = input.nextInt();
 
+    //create a for loop and declare a variable to multiply the users number by
     for(int multiply = 1; multiply <= 12; multiply++){
+
+      //declare a variable for the product of the users number and the multiply variable
       int product = multiply*userNum;
+      
+      //print out the statement
       System.out.println(multiply + " x " + userNum + " = " + product);
     }
     
